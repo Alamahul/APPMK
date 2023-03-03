@@ -18,10 +18,6 @@ class Registrasi_Masyarakat extends CI_Controller
     }
     public function registrasi()
     {
-        $this->form_validation->set_rules('nama','Nama Lengkap','required');
-        if ( $this->form_validation->run() == FALSE) {
-            header('Location:'. base_url() . 'Registrasi_Masyarakat');
-        }
         if ($this->MasyarakatModel->tambahMasyarakat($_POST) > 0) {
             header('Location:'. base_url() . 'Home');
         }else{

@@ -49,6 +49,7 @@ class MasyarakatModel extends CI_model
         $pass = $data['password'];
         $telp = $data['telp'];
         
+        
     }
 
 }
